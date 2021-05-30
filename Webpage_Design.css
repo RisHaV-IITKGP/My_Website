@@ -5,6 +5,11 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+li,ul {
+	font-size: large;
+	line-height: 1.5;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -13,12 +18,17 @@ body {
 /* Styles for Navigation Bar */
 .nav-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	padding: 38px;
 }
 
 .left-side {
 	display: flex;
+}
+
+.right-side {
+	margin-left: 450px;
+	font-size: large;
 }
 
 .nav-wrapper > .left-side > div {
@@ -55,15 +65,47 @@ body {
 	color: black !important;
 }
 
+.test {
+    background-color: lightseagreen;
+}
+
 /* Potfolio Styles */
 
-.potfolio-items-wrapper {
+.potfolio-item-wrapper {
+	position: relative;	
+}
+
+.row-odd-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.row-even-wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.row-skills-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.potfolio-item-wrapper {
-	position: relative;	
+.description-1 {
+	background-color: #f7f7f7;
+}
+
+.description-2 {
+	background-color: #f4f3f3;
+}
+
+.description-3 {
+	background-color: #f7f7f7;
+}
+
+
+.skills-wrapper {
+	margin-top: 5%;
+	margin-left: 5%;
 }
 
 .potfolio-img-background {
@@ -95,12 +137,14 @@ body {
 .img-text-wrapper .subtitle {
 	transition: 1s;
 	font-weight: 600;
+	font-size: large;
 	color: transparent;
 }
 
 /* Applies only when hovering over it */
 .img-text-wrapper:hover .subtitle {
 	font-weight: 600;
+	font-size: large;
 	color: lightseagreen;
 }
 
@@ -111,12 +155,21 @@ body {
 
 .two-column-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
+}
+
+.one-column-wrapper {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 2fr;
 }
 
 .profile-image-wrapper img{
-	width: 100%;
-	height: 3	00%;
+	border-radius: 100%;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10%;
+	object-fit: contain;
 }
 
 .profile-content-wrapper {
@@ -127,4 +180,37 @@ body {
 
 .profile-content-wrapper {
 	color: black;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+  
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-github {
+	background: black;
+	color: white;
+}
+
+.fa-envelope {
+	background: red;
+	color: white;
 }
