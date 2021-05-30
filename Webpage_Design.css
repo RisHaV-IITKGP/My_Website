@@ -3,6 +3,7 @@
 body {
 	margin: 0px;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 
 li,ul {
@@ -10,9 +11,42 @@ li,ul {
 	line-height: 1.5;
 }
 
+.description-1 a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.description-1 a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.description-1 a:hover {
+	text-decoration: none;
+	color: darkturquoise;
+	font-weight: bold;
+}
+
+.description-2 a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.description-2 a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.description-2 a:hover {
+	text-decoration: none;
+	color: darkturquoise;
+	font-weight: bold;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
+	font-weight: 300
 }
 
 /* Styles for Navigation Bar */
